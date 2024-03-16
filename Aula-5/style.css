@@ -40,10 +40,99 @@ img {
 
 .conteiner-direita {
     background-color: #fff;
-
+    padding: 30px;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* padding: 30px; */
+
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs label {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.inputs input {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 6px gray;
+    height: 30px;
+    width: 200px;
+}
+.inputs input::placeholder {
+    padding-left: 10px;
+}
+
+.inputs input:hover {
+    border: none;
+    box-shadow: 5px 5px 6px purple;
+}
+
+.inputs input:focus {
+    outline: 1.5px solid violet;
+}
+
+.conteiner-genero {
+    width: 100%;
+}
+
+.conteiner-genero h2 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.conteiner-genero div div label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.continuar {
+    width: 100%;   
+}
+
+
+section {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+}
+
+h1 {
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    background-color: rgb(177, 14, 177);
+    height: 5px;
+    width: 50px;
+    margin: 0;
+    position: absolute;
+    border: none;
+    left: 0;
+    top: 30px;
+    border-radius: 10px;
 }
