@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+
+
+body {
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.863);
+}
+
+.conteiner {
+    background-color: gray;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    padding: 2.5em;
+}
+
+#output-color {
+    width: 25vmin;
+    height: 25vmin;
+    border-radius: 50%;
+    margin: 20px;
+    display: grid;
+    place-items: center;
+    border: 0.5em solid white;
+    margin-bottom: 20px;
+}
+
+
+
+#output-color span {
+    display: block;
+    width: calc(100% - 1em);
+    height: calc(100% - 1em);
+    border-radius: 50%;
+}
+
+.show-color {
+    animation: pop 0.5s;
+}
+
+@keyframes pop {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+#output {
+    width: 100%;
+    background-color: transparent;
+    border: 2.5px dashed white;
+    font-size: 1.3em;
+    padding: 0.5em 0;
+    border-radius: 10px;
+    text-align: center;
+    cursor: no-drop;
+    text-transform: uppercase;
+    color: white;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.buttons button {
+    font-size: 1;
+    padding: 0.8em 1.7em;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: grab;
+}
+
+.grabbin {
+    cursor: grabbing;
+}
+
+#generate {
+    background-color: blueviolet;
+    color: white;
+}
+
+#copy {
+    background-color: transparent;
+    color: white;
+    border: 3px solid blueviolet;
+}
+
+.alert {
+    background-color: gray;
+    font-size: 2.5vmin;
+    padding: 1em 1.5em;
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    transition: 0.5s;
+    transform: translate(calc(100% + 10px));
+}
+
+.alert.show {
+    transform: translate(0);
+}
