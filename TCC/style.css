@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+}
+
+.cabecalho {
+    background-color: purple;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.texto {
+    align-items: center;
+    width: 530px;
+}
+
+body {
+    background-color: pink;
+    font-family: "Playwrite NZ", cursive;
+}
+
+.piada {
+  position: fixed;
+  bottom: 300px;
+  left: calc(100% - 67%);
+
+  
+}
+
+.gerar_piada {
+    position: fixed;
+    bottom: 250px;
+    left: calc(100% - 60%);
+    background-color: blueviolet;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.818);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.gerar_piada:hover {
+    background-color: rgba(137, 43, 226, 0.523);
+}
+
